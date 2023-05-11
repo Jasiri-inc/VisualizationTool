@@ -1,0 +1,43 @@
+#data-flow-tree ul {
+    list-style-type: none;
+}
+
+#data-flow-tree li {
+    margin-left: 1rem;
+    position: relative;
+}
+
+#data-flow-tree li:before {
+    content: "";
+    display: block;
+    border-left: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -0.5rem;
+}
+
+.transaction-node:hover {
+    cursor: pointer;
+}
+
+#transaction-metadata h2 {
+    margin-top: 0;
+}
+
+#transaction-metadata ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#transaction-metadata li {
+    margin-bottom: 0.5rem;
+}
+
+#transaction-metadata li span {
+    font-weight: bold;
+}
+
+#transaction-metadata li span::after {
+    content: ":";
+}

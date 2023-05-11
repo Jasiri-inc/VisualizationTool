@@ -1,0 +1,25 @@
+views.py: This file contains the Python code for the views of the web application. 
+It defines a single view function index that renders the index.html template. 
+This view function also makes an AJAX request to the API endpoint /api/ to retrieve the transaction data in JSON format.
+
+
+urls.py: This file contains the URL patterns for the web application. 
+It maps the URL path / to the index view function defined in views.py.
+
+
+base.html: This is the base HTML template that will be extended by all other templates. 
+It defines the basic structure of the HTML document, 
+including the <head> and <body> elements, as well as a navigation bar and a footer. 
+The block tags define where the content of the extending templates will be inserted.
+
+
+index.html: This is the HTML template for the main page of the dashboard. 
+It extends the base.html template and fills in the content blocks with the main content of the page. 
+This includes a title, a header, a data flow tree visualisation, and a data table that displays the transaction data retrieved from the API.
+
+style.css: This is the CSS file that defines the styling of the dashboard. 
+It sets the background color and font styles, as well as the layout and styling of the data flow tree visualisation and data table.
+
+main.js: This is the JavaScript file that contains the client-side code for the dashboard. 
+It defines an event handler for the document's ready event, which makes an AJAX request to the API endpoint /api/ to retrieve the transaction data in JSON format. 
+The buildTree function processes the JSON data and builds a tree-like structure to represent the data flow. The function also binds a click event handler to each transaction node to display more detailed information about the selected transaction.
