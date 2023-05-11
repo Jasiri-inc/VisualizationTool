@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Flow Dashboard</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Data Flow Dashboard</h1>
+				<hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div id="data-flow-tree"></div>
+			</div>
+			<div class="col-md-8">
+				<div id="transaction-metadata"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
